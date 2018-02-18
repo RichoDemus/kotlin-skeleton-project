@@ -1,0 +1,21 @@
+apply plugin: 'kotlin'
+
+dependencies {
+    compile 'org.jetbrains.kotlin:kotlin-runtime:1.2.21'
+    compile 'org.jetbrains.kotlin:kotlin-stdlib:1.2.21'
+    permitUnusedDeclared 'org.jetbrains.kotlin:kotlin-stdlib:1.2.21'
+    compile 'org.jetbrains:annotations'
+}
+
+repositories {
+    jcenter()
+}
+
+buildscript {
+    repositories {
+        jcenter()
+    }
+    dependencies {
+        classpath 'org.jetbrains.kotlin:kotlin-gradle-plugin:1.2.21'
+    }
+}
