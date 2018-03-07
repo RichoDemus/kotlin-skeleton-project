@@ -1,9 +1,9 @@
 apply plugin: 'kotlin'
 
 dependencies {
-    compile 'org.jetbrains.kotlin:kotlin-runtime:1.2.21'
-    compile 'org.jetbrains.kotlin:kotlin-stdlib:1.2.21'
-    permitUnusedDeclared 'org.jetbrains.kotlin:kotlin-stdlib:1.2.21'
+    compile 'org.jetbrains.kotlin:kotlin-runtime:1.2.30'
+    compile 'org.jetbrains.kotlin:kotlin-stdlib:1.2.30'
+    permitUnusedDeclared 'org.jetbrains.kotlin:kotlin-stdlib:1.2.30'
     compile 'org.jetbrains:annotations'
 }
 
@@ -16,6 +16,6 @@ buildscript {
         jcenter()
     }
     dependencies {
-        classpath 'org.jetbrains.kotlin:kotlin-gradle-plugin:1.2.21'
+        classpath 'org.jetbrains.kotlin:kotlin-gradle-plugin:1.2.30'
     }
 }
