@@ -19,4 +19,20 @@ apply plugin: 'ca.cutterslade.analyze'
 subprojects {
     apply plugin: 'java'
     apply plugin: 'ca.cutterslade.analyze'
+
+    configurations {
+        ktlint
+    }
+
+    dependencies {
+        ktlint "com.github.shyiko:ktlint:0.29.0"
+    }
+
+    task ktlint(type: JavaExec, group: "verification") {
+        description = "Check Kotlin code style."
+        main = "com.github.shyiko.ktlint.Main"
+        classpath = configurations.ktlint
+        args ["src/**/*.kt"]
+    }
+    check.dependsOn ktlint
 }
